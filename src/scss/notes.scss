@@ -1,0 +1,40 @@
+@import "variables";
+
+.notes {
+    max-width: 96%;
+    position: absolute; top: 80px; left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.note {
+    box-shadow: 2px 2px 3px #888;
+    width: min-content;
+    height: min-content;
+    border-radius: 4px;
+}
+
+textarea {
+    display: block;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    font-size: 1.3em;
+    &:focus {
+        outline: none;
+    }
+}
+
+label {
+    background: $green;
+    color: white;
+    display:block;
+    text-align: end;
+    border-radius: 5px 5px 0 0;
+}
+
+.note svg {
+    margin: 7px 7px;
+}
+
